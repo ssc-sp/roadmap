@@ -64,7 +64,7 @@ if table
   end
 
   I18n.available_locales = Language.all.pluck(:abbreviation)
-
+  I18n.config.enforce_available_locales = false
   I18n.default_locale = Language.default.try(:abbreviation) || 'en-GB'
 else
   def default_locale
@@ -76,6 +76,6 @@ else
   end
 
   I18n.available_locales = ['en-GB']
-
+  I18n.config.enforce_available_locales = false
   I18n.default_locale = 'en-GB'
 end

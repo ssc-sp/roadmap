@@ -44,6 +44,11 @@ module DMPRoadmap
     #       moving our helper methods into Presenters if it makes sense
     config.action_controller.include_all_helpers = true
 
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
+    config.i18n.default_locale = :en
+    #config.i18n.available_locales = :en
+    config.i18n.enforce_available_locales = false
+
     # Set the default host for mailer URLs
     config.action_mailer.default_url_options = { host: Socket.gethostname.to_s }
   end

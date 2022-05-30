@@ -48,8 +48,7 @@
     "regenerator-runtime": "^0.13.5",
     "timeago.js": "^4.0.2",
     "tinymce": "4.9.11",
-    "turbolinks": "^5.2.0",
-    "webpack": "^4.42.1"
+    "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
@@ -67,6 +66,7 @@
     "karma-jquery": "^0.2.4",
     "karma-json-fixtures-preprocessor": "^0.0.6",
     "karma-webpack": "^4.0.2",
+    "webpack": "^4.46.0",
     "webpack-dev-server": "^4.7.3"
   },
   "resolutions": {
