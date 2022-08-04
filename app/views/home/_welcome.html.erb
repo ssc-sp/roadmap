@@ -1,4 +1,4 @@
-<% title _("Welcome to #{ApplicationService.application_name}.") %>
+<% title _("#{ApplicationService.application_name}") %>
 <div>
   <div style="background-color:yellow; padding: 10px; border-radius:15px;">
     <p>Proof of concept warnings, currently the tool is:</p>
@@ -15,7 +15,7 @@
   </div>
   <h1><%= _("Welcome to #{ApplicationService.application_name}.")%></h1>
   <p>
-    <%= sanitize _('<p>%{application_name} has been developed by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>') % {
+    <%= sanitize _('<p>%{application_name} has been deployed by <strong>%{organisation_name}</strong> for evaluation to help you write data management plans.</p>') % {
       application_name: ApplicationService.application_name,
       organisation_name: Rails.configuration.x.organisation.name}
       %>
