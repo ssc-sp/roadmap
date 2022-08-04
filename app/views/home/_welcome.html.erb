@@ -15,7 +15,7 @@
   </div>
   <h1><%= _("Welcome to #{ApplicationService.application_name}.")%></h1>
   <p>
-    <%= sanitize _('<p>%{application_name} has been deployed by <strong>%{organisation_name}</strong> for evaluation to help you write data management plans.</p>') % {
+    <%= sanitize _('<p>%{application_name} has been deployed by the <strong>Data Solutions for Science</strong> team at <strong>%{organisation_name}</strong> for evaluation. The tool is intended to help you write data management plans.</p>') % {
       application_name: ApplicationService.application_name,
       organisation_name: Rails.configuration.x.organisation.name}
       %>
