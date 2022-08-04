@@ -4,8 +4,8 @@ defaults: &defaults
   # Warning: The abbreviation here should match the org.abbreviation value registered in your database!
   organisation: &organization_defaults
     name: 'Shared Services Canada'
-    abbreviation: 'CC'  # This value is used to identify the default guidance that get auto-selected when a new plan is created
-    url: 'https://github.com/DMPRoadmap/roadmap/wiki'
+    abbreviation: 'SSC'  # This value is used to identify the default guidance that get auto-selected when a new plan is created
+    url: 'https://github.com/ssc-sp/roadmap'
     copywrite_name: 'Curation Centre (CC)'
     email: 'tester@cc_curation_centre.org'
     do_not_reply_email: 'do-not-reply@cc_curation_centre.org'
@@ -35,12 +35,12 @@ defaults: &defaults
 
   application: &application_defaults
     name: 'DMPRoadmap'
-    url: 'https://github.com/DMPRoadmap/roadmap'
+    url: 'https://github.com/ssc-sp/roadmap'
     version: '0.1.0'
-    release_notes_url: 'https://github.com/DMPRoadmap/roadmap/wiki/Releases'
-    issue_list_url: 'https://github.com/DMPRoadmap/roadmap/issues'
+    release_notes_url: 'https://github.com/ssc-sp/roadmap/wiki/Releases'
+    issue_list_url: 'https://github.com/ssc-sp/roadmap/issues'
     user_group_subscription_url: 'http://listserv.ucop.edu/cgi-bin/wa.exe?SUBED1=ROADMAP-L&A=1'
-    api_documentation_url: 'https://github.com/DMPRoadmap/roadmap/wiki/API-Documentation'
+    api_documentation_url: 'https://github.com/ssc-sp/roadmap/wiki/API-Documentation'
     api_max_page_size: 100
     archived_accounts_email_suffix: '@removed_accounts-example.org'
     use_recaptcha: false

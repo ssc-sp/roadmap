@@ -17,9 +17,9 @@ $(() => {
       && !(exceptions.ids.indexOf(link.attr('id')) >= 0)
     ) {
       link.attr('target', '_blank');
-      link.addClass('has-new-window-popup-info');
+      // link.addClass('has-new-window-popup-info');
       // Add span as child of link.
-      link.append($(`<span class="new-window-popup-info">${getConstant('OPENS_IN_A_NEW_WINDOW_TEXT')}</span>`));
+      // link.append($(`<span class="new-window-popup-info">${getConstant('OPENS_IN_A_NEW_WINDOW_TEXT')}</span>`));
     }
   });
 
@@ -38,9 +38,9 @@ $(() => {
       && !(exceptions.ids.indexOf(link.attr('id')) >= 0)
     ) {
       link.attr('target', '_blank');
-      link.addClass('has-new-window-popup-info');
+      // link.addClass('has-new-window-popup-info');
       // Add span as child of link.
-      link.append($(`<span class="new-window-popup-info">${getConstant('OPENS_IN_A_NEW_WINDOW_TEXT')}</span>`));
+      // link.append($(`<span class="new-window-popup-info">${getConstant('OPENS_IN_A_NEW_WINDOW_TEXT')}</span>`));
     }
   });
 });
