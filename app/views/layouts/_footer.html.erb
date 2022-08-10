@@ -4,29 +4,36 @@
   contact_us = Rails.configuration.x.organisation.contact_us_url || contact_us_path
 %>
 
-<!-- footer container -->
-<div id="footer-navbar" class="navbar-inverse navbar-fixed-bottom" role="navigation">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li><%= link_to sanitize("&copy; #{Time.now.year} #{Rails.configuration.x.organisation.name}"), "#{Rails.configuration.x.organisation.url}"%></li>
-      <li>•</li>
-      <li><a href="<%= about_us_path %>"><%= _('About') %></a></li>
-      <li><a href="<%= contact_us %>"><%= _('Contact us') %></a></li>
-      <li><a href="<%= terms_path %>"><%= _('Terms of use') %></a></li>
-      <li><a href="<%= privacy_path %>"><%= _('Privacy statement') %></a></li>
-      <li><a href="https://github.com/ssc-sp/roadmap"><%= _('GitHub') %></a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <%= link_to("https://www.canada.ca/", title: "Government of Canada", target: '_blank')  do %>
-          <%= image_tag("uc3_logo_white.png", class: "img-responsive", alt: 'Government of Canada') %>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to("https://www.canada.ca/en/shared-services.html", title: "Shared Services Canada", target: '_blank')  do %>
-          <%= image_tag("dcc_logo_white.png", class: "img-responsive", alt: 'Shared Services Canada') %>
-        <% end %>
-      </li>
-    </ul>
-  </div>
-</div>
+<footer id="wb-info" style="display: block; position: relative; z-index: 5;">
+	<div class="landscape" style="display: block; background: #26374a url(https://www.ospr.link/landscape.80f363ef24c5920c9c8e.png) no-repeat 100% 100%;">
+		<nav class="container wb-navcurr" style="padding-top: 3em; padding-bottom: 3em; display: block;">
+			<ul class="list-unstyled colcount-xs-2 colcount-md-3" style="display: block; list-style: none outside none; display: block; margin-inline-start: 0px; margin-inline-end: 0px;">
+				<li style="display: list-item; float: left;"><a href="<%= about_us_path %>" style="color:#fff;"><%= _('About') %></a></li>
+				<li style="display: list-item; margin-left: 6em; float: left"><a href="<%= contact_us %>" style="color:#fff;"><%= _('Contact us') %></a></li>
+				<li style="display: list-item; margin-left: 6em; float: left;"><a href="<%= terms_path %>" style="color:#fff;"><%= _('Terms of use') %></a></li>
+				<li style="display: list-item; margin-left: 6em; float: left;"><a href="<%= privacy_path %>" style="color:#fff;"><%= _('Privacy statement') %></a></li>
+				<li style="display: list-item; margin-left: 6em; float: left;"><a href="https://github.com/ssc-sp/roadmap" style="color:#fff;"><%= _('GitHub') %></a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand" style="display: block;">
+		<div class="container" style="display: block;">
+			<div class="row " style="display: block;">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk" style="padding-top: 1em; padding-bottom: 1em;">
+					<ul style="display: block; list-style-type: disc; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 0px;">
+            			<li style="list-style-type: none; display: list-item; margin-bottom: 0.75em; margin-right: 2em; float: left;"><a href="https://www.canada.ca/en/social.html" style="color: #284162;">Social media</a></li>
+						<li style="display: list-item; margin-bottom: 0.75em; margin-right: 2em; float: left;"><a href="https://www.canada.ca/en/mobile.html" style="color: #284162;">Mobile applications</a></li>
+						<li style="display: list-item; margin-bottom: 0.75em; margin-right: 2em; float: left;"><a href="https://www1.canada.ca/en/newsite.html" style="color: #284162;">About Canada.ca</a></li>
+						<li style="display: list-item; margin-bottom: 0.75em; margin-right: 2em; float: left;"><a href="https://www.canada.ca/en/transparency/terms.html" style="color: #284162;">Terms and conditions</a></li>
+						<li style="display: list-item; margin-bottom: 0.75em; float: left;"><a href="https://www.canada.ca/en/transparency/privacy.html" style="color: #284162;">Privacy</a></li></ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page</a>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+					<img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" style="height: 40px; margin-bottom: 10px; margin-top: 20px; width: auto; vertical-align: middle;" alt="Symbol of the Government of Canada">
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
