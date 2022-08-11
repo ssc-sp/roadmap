@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-04-07 11:27+0000\n"
+"POT-Creation-Date: 2022-08-11 15:29+0000\n"
 "PO-Revision-Date: 2022-04-07 13:27+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: German\n"
@@ -139,8 +139,8 @@ msgid "You need to sign in or sign up before continuing."
 msgstr "Bitte melden Sie sich an oder registrieren Sie sich bevor Sie fortfahren."
 
 #: ../../app/controllers/application_controller.rb:108
-msgid "Unable to %{action} the %{object}. {errors}"
-msgstr "%{action} %{object} kann nicht ausgeführt werden. {Fehler}"
+msgid "Unable to %{action} the %{object}. %{errors}"
+msgstr ""
 
 #: ../../app/controllers/application_controller.rb:114
 msgid "Successfully %{action} the %{object}."
@@ -241,19 +241,15 @@ msgstr "Der Suchbereich reagiert nicht auf jeden"
 msgid "The search space does not have elements associated"
 msgstr "Dem Suchbereich sind keine Elemente zugeordnet"
 
-#: ../../app/controllers/contacts_controller.rb:9
-msgid "You need to be signed in to use this functionality"
-msgstr "Sie müssen angemeldet sein, um diese Funktion nutzen zu können"
-
-#: ../../app/controllers/contacts_controller.rb:15
+#: ../../app/controllers/contacts_controller.rb:13
 msgid "Captcha verification failed, please retry."
 msgstr "Die Captcha-Überprüfung ist fehlgeschlagen. Versuchen Sie es erneut."
 
-#: ../../app/controllers/contacts_controller.rb:21
+#: ../../app/controllers/contacts_controller.rb:18
 msgid "Contact email was successfully sent."
 msgstr "Die Nachricht wurde erfolgreich versendet."
 
-#: ../../app/controllers/contacts_controller.rb:23
+#: ../../app/controllers/contacts_controller.rb:20
 msgid "Unable to submit your request"
 msgstr "Ihre Anfrage konnte nicht gesendet werden"
 
@@ -275,7 +271,7 @@ msgstr "Hinzugefügt"
 #: ../../app/controllers/org_admin/departments_controller.rb:50
 #: ../../app/controllers/org_admin/sections_controller.rb:103
 #: ../../app/controllers/org_admin/templates_controller.rb:204
-#: ../../app/controllers/orgs_controller.rb:88
+#: ../../app/controllers/orgs_controller.rb:92
 #: ../../app/controllers/plans_controller.rb:281
 #: ../../app/controllers/plans_controller.rb:284
 #: ../../app/controllers/registrations_controller.rb:249
@@ -295,7 +291,7 @@ msgstr "gespeichert"
 #: ../../app/controllers/org_admin/departments_controller.rb:52
 #: ../../app/controllers/org_admin/sections_controller.rb:105
 #: ../../app/controllers/org_admin/templates_controller.rb:209
-#: ../../app/controllers/orgs_controller.rb:90
+#: ../../app/controllers/orgs_controller.rb:94
 #: ../../app/controllers/plans_controller.rb:290
 #: ../../app/controllers/plans_controller.rb:293
 #: ../../app/controllers/plans_controller.rb:297
@@ -619,19 +615,19 @@ msgstr ""
 msgid "Unable to download the DMP Template at this time."
 msgstr "Die DMP-Vorlage kann zu diesem Zeitpunkt nicht heruntergeladen werden."
 
-#: ../../app/controllers/orgs_controller.rb:116
+#: ../../app/controllers/orgs_controller.rb:120
 msgid "No organisations are currently registered."
 msgstr "Derzeit sind keine Organisationen registriert."
 
-#: ../../app/controllers/orgs_controller.rb:127
+#: ../../app/controllers/orgs_controller.rb:131
 msgid "Please choose an organisation"
 msgstr "Bitte wählen Sie eine Organisation"
 
-#: ../../app/controllers/orgs_controller.rb:136
+#: ../../app/controllers/orgs_controller.rb:140
 msgid "Your organisation does not seem to be properly configured."
 msgstr "Ihre Organisation scheint nicht ordnungsgemäß konfiguriert zu sein."
 
-#: ../../app/controllers/plan_exports_controller.rb:89
+#: ../../app/controllers/plan_exports_controller.rb:92
 msgid "Created using %{application_name}. Last modified %{date}"
 msgstr "Erstellt mit %{application_name}. Zuletzt geändert am %{date}"
 
@@ -1046,7 +1042,7 @@ msgid "Creators:"
 msgstr "Erzeuger:"
 
 #: ../../app/helpers/exports_helper.rb:38
-#: ../../app/models/concerns/exportable_plan.rb:141
+#: ../../app/models/concerns/exportable_plan.rb:140
 #: ../../app/views/shared/export/_plan_coversheet.erb:8
 #: ../../app/views/shared/export/_plan_txt.erb:4
 msgid "Creator:"
@@ -1251,7 +1247,7 @@ msgid "<p>The following %{object_types} will be moved over to '%{org_name}':</p>
 msgstr "<p>Die folgenden %{object_types} werden in '%{org_name}' verschoben:</p>"
 
 #: ../../app/helpers/template_helper.rb:48
-#: ../../app/views/plans/index.html.erb:29
+#: ../../app/views/plans/index.html.erb:42
 #: ../../app/views/plans/new.html.erb:123
 #: ../../app/views/shared/_create_plan_modal.html.erb:5
 #: ../../spec/features/locales_spec.rb:53
@@ -1350,71 +1346,72 @@ msgstr "Antwort"
 msgid " Customised By: "
 msgstr " Angepasst von:"
 
-#: ../../app/models/concerns/exportable_plan.rb:139
+#: ../../app/models/concerns/exportable_plan.rb:138
 #: ../../app/views/shared/export/_plan_txt.erb:4
 msgid "Creators: "
 msgstr "Erzeuger:"
 
-#: ../../app/models/concerns/exportable_plan.rb:142
+#: ../../app/models/concerns/exportable_plan.rb:138
+#: ../../app/models/concerns/exportable_plan.rb:140
 msgid "%{authors}"
 msgstr "%{authors}"
 
-#: ../../app/models/concerns/exportable_plan.rb:143
+#: ../../app/models/concerns/exportable_plan.rb:142
 msgid "%{affiliation}"
 msgstr "%{affiliation}"
 
-#: ../../app/models/concerns/exportable_plan.rb:145
-#: ../../app/models/concerns/exportable_plan.rb:147
+#: ../../app/models/concerns/exportable_plan.rb:144
+#: ../../app/models/concerns/exportable_plan.rb:146
 #: ../../app/views/shared/export/_plan_coversheet.erb:16
 #: ../../app/views/shared/export/_plan_txt.erb:7
 #: ../../app/views/shared/export/_plan_txt.erb:9
 msgid "Template: "
 msgstr "Vorlage:"
 
-#: ../../app/models/concerns/exportable_plan.rb:145
+#: ../../app/models/concerns/exportable_plan.rb:144
 msgid "%{funder}"
 msgstr "%{funder}"
 
-#: ../../app/models/concerns/exportable_plan.rb:147
+#: ../../app/models/concerns/exportable_plan.rb:146
 msgid "%{template}"
 msgstr "%{template}"
 
-#: ../../app/models/concerns/exportable_plan.rb:149
+#: ../../app/models/concerns/exportable_plan.rb:148
 #: ../../app/views/shared/export/_plan_txt.erb:12
 msgid "Grant number: "
 msgstr "Grant Nummer:"
 
-#: ../../app/models/concerns/exportable_plan.rb:149
+#: ../../app/models/concerns/exportable_plan.rb:148
 msgid "%{grant_number}"
 msgstr "%{grant_number}"
 
-#: ../../app/models/concerns/exportable_plan.rb:151
+#: ../../app/models/concerns/exportable_plan.rb:150
 #: ../../app/views/shared/export/_plan_coversheet.erb:26
 #: ../../app/views/shared/export/_plan_txt.erb:15
 msgid "Project abstract: "
 msgstr "Projekt Zusammenfassung:"
 
-#: ../../app/models/concerns/exportable_plan.rb:151
+#: ../../app/models/concerns/exportable_plan.rb:150
 msgid "%{description}"
 msgstr "%{description}"
 
-#: ../../app/models/concerns/exportable_plan.rb:153
+#: ../../app/models/concerns/exportable_plan.rb:152
 #: ../../app/views/shared/export/_plan_coversheet.erb:42
 #: ../../app/views/shared/export/_plan_txt.erb:18
 msgid "Last modified: "
 msgstr "Zuletzt bearbeitet:"
 
-#: ../../app/models/concerns/exportable_plan.rb:153
+#: ../../app/models/concerns/exportable_plan.rb:152
 msgid "%{date}"
 msgstr "%{date}"
 
-#: ../../app/models/concerns/exportable_plan.rb:154
+#: ../../app/models/concerns/exportable_plan.rb:153
 #: ../../app/views/shared/export/_plan_coversheet.erb:49
 #: ../../app/views/shared/export/_plan_txt.erb:19
 msgid "Copyright information:"
 msgstr "Informationen zu Urheberrechten:"
 
-#: ../../app/models/concerns/exportable_plan.rb:155
+#: ../../app/models/concerns/exportable_plan.rb:154
 msgid ""
 "The above plan creator(s) have agreed that others may use as\n"
 "             much of the text of this plan as they would like in their own pla"
@@ -1438,7 +1435,7 @@ msgstr ""
 "             bedeutet nicht, dass der (die) Schöpfer (s) sich mit\n"
 "             Ihr Projekt oder Vorschlag"
 
-#: ../../app/models/concerns/exportable_plan.rb:179
+#: ../../app/models/concerns/exportable_plan.rb:177
 msgid "Not Answered"
 msgstr "Nicht beantwortet"
 
@@ -1981,9 +1978,6 @@ msgstr ""
 "itte das folgende Formular aus."
 
 #: ../../app/views/contact_us/contacts/new.html.erb:10
-#: ../../app/views/layouts/_branding.html.erb:41
-#: ../../app/views/layouts/_footer.html.erb:24
-#: ../../app/views/layouts/_footer.html.erb:30
 #: ../../app/views/org_admin/plans/index.html.erb:40
 #: ../../app/views/paginable/plans/_organisationally_or_publicly_visible.html.erb:39
 #: ../../app/views/paginable/plans/_publicly_visible.html.erb:24
@@ -2473,7 +2467,7 @@ msgid "Department or school"
 msgstr "Institut oder Einrichtung"
 
 #: ../../app/views/devise/registrations/_personal_details.html.erb:55
-#: ../../app/views/layouts/_signin_signout.html.erb:6
+#: ../../app/views/layouts/_signin_signout.html.erb:5
 #: ../../app/views/org_admin/users/edit.html.erb:43
 #: ../../app/views/super_admin/users/edit.html.erb:53
 msgid "Language"
@@ -2495,7 +2489,7 @@ msgstr "Organisationsadministrator"
 
 #: ../../app/views/devise/registrations/edit.html.erb:1
 #: ../../app/views/devise/registrations/edit.html.erb:4
-#: ../../app/views/layouts/_signin_signout.html.erb:29
+#: ../../app/views/layouts/_signin_signout.html.erb:31
 msgid "Edit profile"
 msgstr "Profil bearbeiten"
 
@@ -2520,7 +2514,7 @@ msgid "Do you have a %{application_name} account?"
 msgstr "Hast du einen %{application_name}-Account?"
 
 #: ../../app/views/devise/registrations/new.html.erb:22
-#: ../../app/views/layouts/_signin_signout.html.erb:41
+#: ../../app/views/layouts/_signin_signout.html.erb:43
 #: ../../app/views/shared/_access_controls.html.erb:5
 #: ../../app/views/shared/_sign_in_form.html.erb:19
 msgid "Sign in"
@@ -2616,7 +2610,7 @@ msgstr "Alle Hilfestellungen ansehen"
 #: ../../app/views/guidances/admin_index.html.erb:5
 #: ../../app/views/guidances/new_edit.html.erb:12
 #: ../../app/views/guidances/new_edit.html.erb:16
-#: ../../app/views/layouts/_branding.html.erb:82
+#: ../../app/views/layouts/_signin_signout.html.erb:72
 #: ../../app/views/org_admin/annotations/_form.html.erb:3
 #: ../../app/views/org_admin/questions/_show.html.erb:78
 #: ../../app/views/paginable/themes/_index.html.erb:5
@@ -2713,15 +2707,14 @@ msgstr ""
 msgid "Published?"
 msgstr "Veröffentlicht?"
 
-#: ../../app/views/home/_welcome.html.erb:5
+#: ../../app/views/home/_welcome.html.erb:18
 msgid ""
-"<p>%{application_name} has been developed by the <strong>%{organisation_name}<"
-"/strong> to help you write data management plans.</p>"
+"<p>%{application_name} has been deployed by the <strong>Data Solutions for Sci"
+"ence</strong> team at <strong>Shared Services Canada</strong> for evaluation. "
+"The tool is intended to help you write data management plans.</p>"
 msgstr ""
-"<p> %{application_name} wurde vom <strong>%{organisation_name}</strong> entwic"
-"kelt, um Sie beim Erstellen vonDatenmanagementplänen zu unterstützen. </p>"
 
-#: ../../app/views/home/_welcome.html.erb:11
+#: ../../app/views/home/_welcome.html.erb:24
 msgid "Getting started:"
 msgstr "Erste Schritte:"
 
@@ -2745,90 +2738,29 @@ msgstr "Nächster"
 msgid "Previous"
 msgstr "Früher"
 
-#: ../../app/views/layouts/_branding.html.erb:65
-msgid "Admin"
-msgstr "Administrator"
-
-#: ../../app/views/layouts/_branding.html.erb:71
-#: ../../app/views/org_admin/users/edit.html.erb:71
-#: ../../app/views/paginable/users/_index.html.erb:26
-#: ../../app/views/super_admin/users/edit.html.erb:105
-msgid "Plans"
-msgstr "Pläne"
-
-#: ../../app/views/layouts/_branding.html.erb:77
-#: ../../app/views/org_admin/templates/index.html.erb:4
-#: ../../app/views/paginable/orgs/_index.html.erb:8
-msgid "Templates"
-msgstr "Vorlagen"
-
-#: ../../app/views/layouts/_branding.html.erb:87
-#: ../../app/views/super_admin/orgs/index.html.erb:2
-#: ../../app/views/super_admin/orgs/index.html.erb:6
-msgid "Organisations"
-msgstr "Organisationen"
-
-#: ../../app/views/layouts/_branding.html.erb:92
-#: ../../app/views/orgs/admin_edit.html.erb:1
-#: ../../app/views/orgs/admin_edit.html.erb:6
-msgid "Organisation details"
-msgstr "Organisations-Details"
-
-#: ../../app/views/layouts/_branding.html.erb:98
-msgid "Users"
-msgstr "Nutzer"
-
-#: ../../app/views/layouts/_branding.html.erb:103
-#: ../../app/views/org_admin/questions/_show.html.erb:88
-#: ../../app/views/org_admin/shared/_theme_selector.html.erb:16
-#: ../../app/views/paginable/guidances/_index.html.erb:7
-#: ../../app/views/super_admin/themes/index.html.erb:1
-#: ../../app/views/super_admin/themes/index.html.erb:4
-msgid "Themes"
-msgstr "Themen"
-
-#: ../../app/views/layouts/_branding.html.erb:108
-msgid "Usage"
-msgstr "Usage"
-
-#: ../../app/views/layouts/_branding.html.erb:113
-msgid "Api Clients"
-msgstr "API-Clients"
-
-#: ../../app/views/layouts/_branding.html.erb:116
-#: ../../app/views/org_admin/plans/index.html.erb:11
-#: ../../app/views/super_admin/notifications/index.html.erb:1
-#: ../../app/views/super_admin/notifications/index.html.erb:4
-msgid "Notifications"
-msgstr "Benachrichtigungen"
-
-#: ../../app/views/layouts/_footer.html.erb:13
+#: ../../app/views/layouts/_footer.html.erb:11
 msgid "About"
 msgstr "Über"
 
-#: ../../app/views/layouts/_footer.html.erb:14
+#: ../../app/views/layouts/_footer.html.erb:12
 msgid "Contact us"
 msgstr "Kontaktieren Sie uns"
 
-#: ../../app/views/layouts/_footer.html.erb:15
+#: ../../app/views/layouts/_footer.html.erb:13
 #: ../../app/views/static_pages/termsuse.html.erb:1
 #: ../../app/views/static_pages/termsuse.html.erb:4
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
 
-#: ../../app/views/layouts/_footer.html.erb:16
+#: ../../app/views/layouts/_footer.html.erb:14
 #: ../../app/views/static_pages/privacy.html.erb:1
 #: ../../app/views/static_pages/privacy.html.erb:4
 msgid "Privacy statement"
 msgstr "Datenschutzerklärung"
 
-#: ../../app/views/layouts/_footer.html.erb:17
-msgid "Accessibility statement"
-msgstr "Erklärung zur Barrierefreiheit"
-
-#: ../../app/views/layouts/_footer.html.erb:18
-msgid "Github"
-msgstr "Github"
+#: ../../app/views/layouts/_footer.html.erb:15
+msgid "GitHub"
+msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:12
 #: ../../app/views/orgs/_profile_form.html.erb:55
@@ -2836,8 +2768,8 @@ msgid "logo"
 msgstr "Logo"
 
 #: ../../app/views/layouts/_navigation.html.erb:23
-#: ../../app/views/plans/index.html.erb:1
-#: ../../app/views/plans/index.html.erb:4
+#: ../../app/views/plans/index.html.erb:14
+#: ../../app/views/plans/index.html.erb:17
 msgid "My Dashboard"
 msgstr "Mein Dashboard"
 
@@ -2899,9 +2831,66 @@ msgstr "Alle anzeigen"
 msgid "View less"
 msgstr "Weniger anzeigen"
 
-#: ../../app/views/layouts/_signin_signout.html.erb:32
+#: ../../app/views/layouts/_signin_signout.html.erb:34
 msgid "Logout"
 msgstr "Abmelden"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:55
+msgid "Admin"
+msgstr "Administrator"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:61
+#: ../../app/views/org_admin/users/edit.html.erb:71
+#: ../../app/views/paginable/users/_index.html.erb:26
+#: ../../app/views/super_admin/users/edit.html.erb:105
+msgid "Plans"
+msgstr "Pläne"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:67
+#: ../../app/views/org_admin/templates/index.html.erb:4
+#: ../../app/views/paginable/orgs/_index.html.erb:8
+msgid "Templates"
+msgstr "Vorlagen"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:77
+#: ../../app/views/super_admin/orgs/index.html.erb:2
+#: ../../app/views/super_admin/orgs/index.html.erb:6
+msgid "Organisations"
+msgstr "Organisationen"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:82
+#: ../../app/views/orgs/admin_edit.html.erb:1
+#: ../../app/views/orgs/admin_edit.html.erb:6
+msgid "Organisation details"
+msgstr "Organisations-Details"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:88
+msgid "Users"
+msgstr "Nutzer"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:93
+#: ../../app/views/org_admin/questions/_show.html.erb:88
+#: ../../app/views/org_admin/shared/_theme_selector.html.erb:16
+#: ../../app/views/paginable/guidances/_index.html.erb:7
+#: ../../app/views/super_admin/themes/index.html.erb:1
+#: ../../app/views/super_admin/themes/index.html.erb:4
+msgid "Themes"
+msgstr "Themen"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:98
+msgid "Usage"
+msgstr "Usage"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:103
+msgid "Api Clients"
+msgstr "API-Clients"
+
+#: ../../app/views/layouts/_signin_signout.html.erb:106
+#: ../../app/views/org_admin/plans/index.html.erb:11
+#: ../../app/views/super_admin/notifications/index.html.erb:1
+#: ../../app/views/super_admin/notifications/index.html.erb:4
+msgid "Notifications"
+msgstr "Benachrichtigungen"
 
 #: ../../app/views/layouts/application.html.erb:32
 #: ../../app/views/static_pages/termsuse.html.erb:14
@@ -4881,7 +4870,7 @@ msgstr "Grant-Nummer"
 msgid "Landing Page"
 msgstr "Zielseite"
 
-#: ../../app/views/plans/index.html.erb:8
+#: ../../app/views/plans/index.html.erb:21
 msgid ""
 "The table below lists the plans that you have created, and that have been shar"
 "ed with you by others. You can edit, share, download, make a copy, or remove t"
@@ -4892,23 +4881,23 @@ msgstr ""
 "e Pläne jederzeit bearbeiten, freigeben, herunterladen, kopieren oder entferne"
 "n."
 
-#: ../../app/views/plans/index.html.erb:10
+#: ../../app/views/plans/index.html.erb:23
 msgid "Welcome"
 msgstr "Willkommen"
 
-#: ../../app/views/plans/index.html.erb:11
+#: ../../app/views/plans/index.html.erb:24
 msgid "You are now ready to create your first DMP."
 msgstr "Sie können jetzt Ihren ersten DMP erstellen."
 
-#: ../../app/views/plans/index.html.erb:12
+#: ../../app/views/plans/index.html.erb:25
 msgid "Click the 'Create plan' button below to begin."
 msgstr "Klicken Sie auf die Schaltfläche \"Plan erstellen\", um zu beginnen."
 
-#: ../../app/views/plans/index.html.erb:35
+#: ../../app/views/plans/index.html.erb:48
 msgid "%{org_title} Plans"
 msgstr "%{org_title} Pläne"
 
-#: ../../app/views/plans/index.html.erb:36
+#: ../../app/views/plans/index.html.erb:49
 msgid ""
 "The table below lists the plans that users at your organisation have created a"
 "nd shared within your organisation. This allows you to download a PDF and view"
@@ -5509,25 +5498,6 @@ msgstr "Bitte besuchen Sie die"
 #: ../../app/views/static_pages/about_us.html.erb:35
 msgid "page for guidance."
 msgstr "Seite zur Orientierung."
-
-#: ../../app/views/static_pages/about_us.html.erb:37
-msgid "Customising for your Organisation"
-msgstr "Customizing für Ihre Organisation"
-
-#: ../../app/views/static_pages/about_us.html.erb:39
-msgid ""
-"Organisations can customise the tool to highlight local requirements, resource"
-"s, and services. Organisational templates can be added to address local DMP re"
-"quirements, and additional sections and questions can be included in funder te"
-"mplates. Users from participating organisations that configure the tool for si"
-"ngle sign-on can log in with their own organisational accounts."
-msgstr ""
-"Organisationen können das Tool anpassen, um lokale Anforderungen, Ressourcen u"
-"nd Services hervorzuheben. Organisatorische Vorlagen können hinzugefügt werden"
-", um lokale DMP-Anforderungen zu berücksichtigen, und zusätzliche Abschnitte u"
-"nd Fragen können in Förderervorlagen enthalten sein. Benutzer von teilnehmende"
-"n Organisationen, die das Tool für Single Sign-On konfigurieren, können sich m"
-"it ihren eigenen Organisationskonten anmelden."
 
 #: ../../app/views/static_pages/help.html.erb:11
 msgid ""
@@ -6194,6 +6164,11 @@ msgid "First, search for a user by email, then select them from the list."
 msgstr ""
 "Suchen Sie zuerst per E-Mail nach einem Benutzer und wählen Sie ihn dann aus d"
 "er Liste aus."
+
+#: ../../app/views/template_exports/template_export.docx.erb:29
+#: ../../app/views/template_exports/template_export.pdf.erb:73
+msgid "default"
+msgstr ""
 
 #: ../../app/views/template_exports/template_export.docx.erb:39
 #: ../../app/views/template_exports/template_export.pdf.erb:81

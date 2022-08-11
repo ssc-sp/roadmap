@@ -1,15 +1,9 @@
 <div style="background-color:yellow; padding: 10px; border-radius:15px;">
-    <p>Proof of concept warnings, currently the tool is:</p>
-    <ul>
-      <li>only for <strong>unprotected data</strong></li>
-      <li>testing and development</li>
-    </ul>
-    <p>Avertissements de preuve de concept, dans sont état actuel, cet outil est uniquement destiné:</p>
-    <ul>
-      <li>aux données <strong>non-protégées</strong></li>
-      <li>aux tests et au développement</li>
-    </ul>
-    <p>Link to comparison form / Lien vers le formulaire de comparaison: <a href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a>
+  <%= sanitize _("<p>Proof of concept warnings, currently the tool is:</p>") %>
+  <ul>
+    <%= sanitize _("<li>only for <strong>unprotected data</strong></li> <li>testing and development</li>") %>
+  </ul>
+  <%= sanitize _("Link to comparison form:") %> <a href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a>
 </div>
 <% title _('My Dashboard') %>
 <div class="row">
@@ -39,7 +33,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <%= link_to _('Create plan'), new_plan_path, class: "btn btn-primary" %>
+    <%= link_to _('Create plans'), new_plan_path, class: "btn btn-primary" %>
   </div>
 </div>
 <div class="row">

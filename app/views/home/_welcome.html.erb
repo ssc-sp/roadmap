@@ -1,21 +1,17 @@
 <% title _("#{ApplicationService.application_name}") %>
 <div>
   <div style="background-color:yellow; padding: 10px; border-radius:15px;">
-    <p>Proof of concept warnings, currently the tool is:</p>
+    <%= sanitize _("<p>Proof of concept warnings, currently the tool is:</p>") %>
     <ul>
-      <li>only for <strong>unprotected data</strong></li>
-      <li>testing and development</li>
+      <%= sanitize _("<li>only for <strong>unprotected data</strong></li> <li>testing and development</li>") %>
     </ul>
-    <p>Avertissements de preuve de concept, dans sont état actuel, cet outil est uniquement destiné:</p>
-    <ul>
-      <li>aux données <strong>non-protégées</strong></li>
-      <li>aux tests et au développement</li>
-    </ul>
-    <p>Link to comparison form / Lien vers le formulaire de comparaison: <a href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a>
+    <%= sanitize _("Link to comparison form:") %> <a href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a>
   </div>
-  <h1><%= _("Welcome to #{ApplicationService.application_name}.")%></h1>
+  <h1><%= sanitize _("Welcome to %{application_name}") % {
+    application_name: ApplicationService.application_name
+  } %></h1>
   <p>
-    <%= sanitize _('<p>%{application_name} has been deployed by the <strong>Data Solutions for Science</strong> team at <strong>%{organisation_name}</strong> for evaluation. The tool is intended to help you write data management plans.</p>') % {
+    <%= sanitize _('<p>%{application_name} has been deployed by the <strong>Data Solutions for Science</strong> team at <strong>Shared Services Canada</strong> for evaluation. The tool is intended to help you write data management plans.</p>') % {
       application_name: ApplicationService.application_name,
       organisation_name: Rails.configuration.x.organisation.name}
       %>

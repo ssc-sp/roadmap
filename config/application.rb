@@ -46,7 +46,7 @@ module DMPRoadmap
 
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
     config.i18n.default_locale = :en
-    #config.i18n.available_locales = :en
+    config.i18n.available_locales = [:en, :"fr-FR"]
     config.i18n.enforce_available_locales = false
 
     # Set the default host for mailer URLs

@@ -2,7 +2,7 @@
 # IF YOU UPDATE IT, YOUR CHANGES WILL BE LOST AT THE NEXT SYNC.
 #
 # To update this file, use this translation interface:
-# https://translation.io/dcc-user/roadmap/fr-FR
+# https://translation.io/sean-stilwell/roadmap_test/fr-FR
 #
 ---
 fr-FR:
@@ -77,13 +77,14 @@ fr-FR:
   errors:
     format: "%{attribute} %{message}"
     messages:
+      model_invalid: 'Validation échouée : %{errors}'
       inclusion: n'est pas inclus(e) dans la liste
       exclusion: n'est pas disponible
       invalid: n'est pas valide
       confirmation: ne concorde pas avec %{attribute}
       accepted: doit être accepté(e)
       empty: doit être rempli(e)
-      blank: doit être rempli(e)
+      blank: Ce champ ne peut être vide
       present: doit être vide
       too_long:
         one: est trop long (pas plus d'un caractère)
@@ -104,6 +105,7 @@ fr-FR:
       other_than: doit être différent de %{count}
       odd: doit être impair
       even: doit être pair
+      required: doit exister
       taken: n'est pas disponible
       already_confirmed: a déjà été validé, essayez de vous connecter.
       confirmation_period_expired: à confirmer dans les %{period}. Veuillez faire
@@ -114,13 +116,20 @@ fr-FR:
       not_saved:
         one: 'Une erreur a empêché d’enregistrer ce(tte) %{resource} :'
         other: "%{count} erreurs ont empêché d’enregistrer ce(tte) %{resource} :"
-      model_invalid: 'Validation échouée : %{errors}'
-      required: doit exister
     template:
       body: 'Veuillez vérifier les champs suivants : '
       header:
         one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
         other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+    unavailable_session: La session %{id} n'est plus disponible en mémoire. S'il vous
+      arrive d'exécuter sur un serveur multi-processus (comme Unicorn ou Puma), le
+      processus auquel cette requête a abouti ne stocke pas %{id} en mémoire. Envisagez
+      de réduire le nombre de processus/travailleurs à un (1) ou d'utiliser un autre
+      serveur en développement.
+    unacceptable_request: Une version prise en charge est attendue dans l'en-tête
+      Accept.
+    connection_refused: Oups! Échec de la connexion au middleware de la console Web.
+      Assurez-vous qu'un serveur de développement Rails est en cours d'exécution.
   activerecord:
     errors:
       messages:
@@ -205,22 +214,27 @@ fr-FR:
       destroy:
         notice: "%{resource_name} a été détruit avec succès."
         alert: "%{resource_name} n'a pas pu être détruit."
+  recaptcha:
+    errors:
+      verification_failed: La vérification reCAPTCHA a échoué, veuillez réessayer.
+      recaptcha_unreachable: Oups, nous n'avons pas réussi à valider votre réponse
+        reCAPTCHA. Veuillez réessayer.
   devise:
     confirmations:
       confirmed: Votre compte a bien été validé. Veuillez vous connecter.
       send_instructions: Vous recevrez dans quelques minutes un courriel contenant
         les directives pour activer votre compte.
-      send_paranoid_instructions: Si votre courriel existe dans notre base de données,
-        vous recevrez dans quelques minutes un courriel contenant les directives pour
-        valider votre compte.
+      send_paranoid_instructions: Si votre adresse électronique existe dans notre
+        base de données, vous recevrez dans quelques minutes un courriel contenant
+        les directives pour valider votre compte.
     failure:
       already_authenticated: Vous êtes déjà connecté(e).
       inactive: Votre compte n'est plus actif. Merci de nous contacter pour réactiver
         votre compte.
-      invalid: "%{authentication_keys} ou mot de passe invalide."
+      invalid: Courriel ou mot de passe incorrect.
       locked: Votre compte est verrouillé.
       last_attempt: Vous avez une autre tentative avant que votre compte soit verrouillé.
-      not_found_in_database: "%{authentication_keys} ou mot de passe invalide."
+      not_found_in_database: Courriel ou mot de passe incorrect.
       timeout: Votre session est expirée. Veuillez vous reconnecter pour continuer.
       unauthenticated: Vous devez vous connecter ou vous inscrire pour continuer.
       unconfirmed: Vous devez confirmer votre compte pour continuer.
@@ -258,9 +272,9 @@ fr-FR:
         l'adresse URL complète fournie.
       send_instructions: Vous recevrez dans quelques minutes un courriel contenant
         les directives pour réinitialiser le mot de passe.
-      send_paranoid_instructions: Si votre courriel existe dans notre base de données,
-        vous recevrez dans quelques minutes un lien de récupération du mot de passe
-        par courriel.
+      send_paranoid_instructions: Si votre adresse électronique existe dans notre
+        base de données, vous recevrez dans quelques minutes un lien de récupération
+        du mot de passe par courriel.
       updated: Votre mot de passe a bien été modifié. Vous êtes maintenant connecté.
       updated_not_active: Votre mot de passe a bien été modifié.
     registrations:
@@ -271,11 +285,13 @@ fr-FR:
       signed_up_but_locked: Vous êtes bien inscrit(e). Cependant, vous ne pouvez pas
         vous connecter, car votre compte est verrouillé.
       signed_up_but_unconfirmed: Un message contenant un lien de confirmation a été
-        envoyé à votre courriel. Ouvrez ce lien pour activer votre compte. Si vous
-        n’avez pas reçu le courriel de confirmation, vérifiez votre filtre antispam.
+        envoyé à votre adresse électronique. Ouvrez ce lien pour activer votre compte.
+        Si vous n’avez pas reçu le courriel de confirmation, vérifiez votre filtre
+        antipourriel.
       update_needs_confirmation: Votre compte a bien été mis à jour, mais nous devons
-        vérifier votre nouveau courriel. Vérifiez vos courriels et cliquez sur le
-        lien de confirmation pour finaliser la validation de votre nouveau courriel.
+        vérifier votre nouvelle adresse électronique. Vérifiez vos courriels et cliquez
+        sur le lien de confirmation pour finaliser la validation de votre nouvelle
+        adresse électronique.
       updated: Votre compte a bien été modifié.
       updated_but_not_signed_in: Votre compte a été mis à jour avec succès, mais comme
         votre mot de passe a été modifié, vous devez vous reconnecter.
@@ -341,8 +357,3 @@ fr-FR:
       previous: "&lsaquo; Précédent"
       next: Suivant &rsaquo;
       truncate: "&hellip;"
-  recaptcha:
-    errors:
-      verification_failed: La vérification reCAPTCHA a échoué, veuillez réessayer.
-      recaptcha_unreachable: Oups, nous n'avons pas réussi à valider votre réponse
-        reCAPTCHA. Veuillez réessayer.

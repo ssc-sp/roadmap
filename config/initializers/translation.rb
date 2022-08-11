@@ -11,9 +11,9 @@
 # domain specified in order to generate both sets of translation keys.
 if !ENV['DOMAIN'] || ENV['DOMAIN'] == 'app'
   TranslationIO.configure do |config|
-    config.api_key              = ENV['TRANSLATION_API_ROADMAP']
+    config.api_key              = 'fb3d93a26aa146498a06a3a39f6f1776'
     config.source_locale        = 'en'
-    config.target_locales       = %w[de en-GB en-US es fr-FR fi sv-FI pt-BR en-CA fr-CA tr-TR]
+    config.target_locales       = ['fr-FR']
     config.text_domain          = 'app'
     config.bound_text_domains   = %w[app client]
     config.ignored_source_paths = ['app/views/branded/', 'node_modules/']
@@ -72,7 +72,7 @@ else
   end
 
   def available_locales
-    Rails.application.config.i18n.available_locales = %w[en-GB en-US]
+    Rails.application.config.i18n.available_locales = %w[en-GB fr-FR]
   end
 
   I18n.available_locales = ['en-GB']
