@@ -1,23 +1,6 @@
-<!-- language dropdown -->
-<span class="dropdown" id="change-language" style="margin-left:2em;">
-  <a href="#" class="dropdown-toggle" role="button" id="language-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-language" aria-hidden="true">&nbsp;</i>
-    <%= _('Language') %>
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu inverse-dropdown" aria-labelledby="language-menu">
-    <li>
-      <%= link_to "English", locale_path("en"), method: :patch %>
-    </li>
-    <li>
-      <%= link_to "Français", locale_path("fr-FR"), method: :patch %>
-    </li>
-  </ul>
-</span>
-
 <!-- Sign in / out -->
 <% if user_signed_in? %>
-  <span class="dropdown" id="signin-signout" style="margin-left:2em;">
+  <span class="dropdown" id="signin-signout">
     <a href="#" class="dropdown-toggle" role="button" id="user-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-user" aria-hidden="true">&nbsp;</i>
       <%= current_user.name(false) %>
@@ -107,3 +90,12 @@
     </span>
   <% end %> <!-- if org admin -->
 <% end %>
+
+<!-- Language switcher -->
+<span style="margin-left:2em;">
+  <% if I18n.locale == :en %>
+    <%= link_to "Français", locale_path("fr-FR"), method: :patch %>
+  <% else %>
+    <%= link_to "English", locale_path("en"), method: :patch %>
+  <% end %>
+</span>
