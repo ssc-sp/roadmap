@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-08-11 16:05+0000\n"
-"PO-Revision-Date: 2022-08-11 16:05+0000\n"
+"POT-Creation-Date: 2022-08-16 18:05+0000\n"
+"PO-Revision-Date: 2022-08-16 18:05+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1178,7 +1178,6 @@ msgid "<p>The following %{object_types} will be moved over to '%{org_name}':</p>
 msgstr ""
 
 #: ../../app/helpers/template_helper.rb:48
-#: ../../app/views/plans/index.html.erb:42
 #: ../../app/views/plans/new.html.erb:123
 #: ../../app/views/shared/_create_plan_modal.html.erb:5
 #: ../../spec/features/locales_spec.rb:53
@@ -2319,7 +2318,6 @@ msgid "Department or school"
 msgstr ""
 
 #: ../../app/views/devise/registrations/_personal_details.html.erb:55
-#: ../../app/views/layouts/_signin_signout.html.erb:5
 #: ../../app/views/org_admin/users/edit.html.erb:43
 #: ../../app/views/super_admin/users/edit.html.erb:53
 msgid "Language"
@@ -2341,7 +2339,7 @@ msgstr ""
 
 #: ../../app/views/devise/registrations/edit.html.erb:1
 #: ../../app/views/devise/registrations/edit.html.erb:4
-#: ../../app/views/layouts/_signin_signout.html.erb:28
+#: ../../app/views/layouts/_signin_signout.html.erb:11
 msgid "Edit profile"
 msgstr ""
 
@@ -2366,7 +2364,6 @@ msgid "Do you have a %{application_name} account?"
 msgstr ""
 
 #: ../../app/views/devise/registrations/new.html.erb:22
-#: ../../app/views/layouts/_signin_signout.html.erb:40
 #: ../../app/views/shared/_access_controls.html.erb:5
 #: ../../app/views/shared/_sign_in_form.html.erb:19
 msgid "Sign in"
@@ -2452,7 +2449,7 @@ msgstr ""
 #: ../../app/views/guidances/admin_index.html.erb:5
 #: ../../app/views/guidances/new_edit.html.erb:12
 #: ../../app/views/guidances/new_edit.html.erb:16
-#: ../../app/views/layouts/_signin_signout.html.erb:69
+#: ../../app/views/layouts/_signin_signout.html.erb:43
 #: ../../app/views/org_admin/annotations/_form.html.erb:3
 #: ../../app/views/org_admin/questions/_show.html.erb:78
 #: ../../app/views/paginable/themes/_index.html.erb:5
@@ -2528,16 +2525,19 @@ msgid "Published?"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:4
+#: ../../app/views/plans/index.html.erb:2
 msgid "<p>Proof of concept warnings, currently the tool is:</p>"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:6
+#: ../../app/views/plans/index.html.erb:4
 msgid ""
 "<li>only for <strong>unprotected data</strong></li> <li>testing and developmen"
 "t</li>"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:8
+#: ../../app/views/plans/index.html.erb:6
 msgid "Link to comparison form:"
 msgstr ""
 
@@ -2596,18 +2596,43 @@ msgstr ""
 msgid "GitHub"
 msgstr ""
 
+#: ../../app/views/layouts/_footer.html.erb:24
+msgid "Social media"
+msgstr ""
+
+#: ../../app/views/layouts/_footer.html.erb:25
+msgid "Mobile applications"
+msgstr ""
+
+#: ../../app/views/layouts/_footer.html.erb:26
+msgid "About Canada.ca"
+msgstr ""
+
+#: ../../app/views/layouts/_footer.html.erb:27
+msgid "Terms and conditions"
+msgstr ""
+
+#: ../../app/views/layouts/_footer.html.erb:28
+msgid "Privacy"
+msgstr ""
+
+#: ../../app/views/layouts/_header.html.erb:21
+msgid "Search Canada.ca"
+msgstr ""
+
 #: ../../app/views/layouts/_navigation.html.erb:12
 #: ../../app/views/orgs/_profile_form.html.erb:55
 msgid "logo"
 msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:23
-#: ../../app/views/plans/index.html.erb:14
-#: ../../app/views/plans/index.html.erb:17
+#: ../../app/views/plans/index.html.erb:8
+#: ../../app/views/plans/index.html.erb:11
 msgid "My Dashboard"
 msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:26
+#: ../../app/views/plans/index.html.erb:36
 msgid "Create plans"
 msgstr ""
 
@@ -2665,44 +2690,44 @@ msgstr ""
 msgid "View less"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:31
+#: ../../app/views/layouts/_signin_signout.html.erb:14
 msgid "Logout"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:52
+#: ../../app/views/layouts/_signin_signout.html.erb:26
 msgid "Admin"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:58
+#: ../../app/views/layouts/_signin_signout.html.erb:32
 #: ../../app/views/org_admin/users/edit.html.erb:71
 #: ../../app/views/paginable/users/_index.html.erb:26
 #: ../../app/views/super_admin/users/edit.html.erb:105
 msgid "Plans"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:64
+#: ../../app/views/layouts/_signin_signout.html.erb:38
 #: ../../app/views/org_admin/templates/index.html.erb:4
 #: ../../app/views/paginable/orgs/_index.html.erb:8
 msgid "Templates"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:74
+#: ../../app/views/layouts/_signin_signout.html.erb:48
 #: ../../app/views/super_admin/orgs/index.html.erb:2
 #: ../../app/views/super_admin/orgs/index.html.erb:6
 msgid "Organisations"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:79
+#: ../../app/views/layouts/_signin_signout.html.erb:53
 #: ../../app/views/orgs/admin_edit.html.erb:1
 #: ../../app/views/orgs/admin_edit.html.erb:6
 msgid "Organisation details"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:85
+#: ../../app/views/layouts/_signin_signout.html.erb:59
 msgid "Users"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:90
+#: ../../app/views/layouts/_signin_signout.html.erb:64
 #: ../../app/views/org_admin/questions/_show.html.erb:88
 #: ../../app/views/org_admin/shared/_theme_selector.html.erb:16
 #: ../../app/views/paginable/guidances/_index.html.erb:7
@@ -2711,15 +2736,15 @@ msgstr ""
 msgid "Themes"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:95
+#: ../../app/views/layouts/_signin_signout.html.erb:69
 msgid "Usage"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:100
+#: ../../app/views/layouts/_signin_signout.html.erb:74
 msgid "Api Clients"
 msgstr ""
 
-#: ../../app/views/layouts/_signin_signout.html.erb:103
+#: ../../app/views/layouts/_signin_signout.html.erb:77
 #: ../../app/views/org_admin/plans/index.html.erb:11
 #: ../../app/views/super_admin/notifications/index.html.erb:1
 #: ../../app/views/super_admin/notifications/index.html.erb:4
@@ -4536,30 +4561,30 @@ msgstr ""
 msgid "Landing Page"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:21
+#: ../../app/views/plans/index.html.erb:15
 msgid ""
 "The table below lists the plans that you have created, and that have been shar"
 "ed with you by others. You can edit, share, download, make a copy, or remove t"
 "hese plans at any time."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:23
+#: ../../app/views/plans/index.html.erb:17
 msgid "Welcome"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:24
+#: ../../app/views/plans/index.html.erb:18
 msgid "You are now ready to create your first DMP."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:25
+#: ../../app/views/plans/index.html.erb:19
 msgid "Click the 'Create plan' button below to begin."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:48
+#: ../../app/views/plans/index.html.erb:42
 msgid "%{org_title} Plans"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:49
+#: ../../app/views/plans/index.html.erb:43
 msgid ""
 "The table below lists the plans that users at your organisation have created a"
 "nd shared within your organisation. This allows you to download a PDF and view"

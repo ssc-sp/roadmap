@@ -15,15 +15,6 @@
       </li>
     </ul>
   </span>
-<% else %>
-  <% if !active_page?(root_path, true) %>
-    <span>
-      <a href="<%= root_path %>">
-        <i class="fas fa-sign-in" aria-hidden="true">&nbsp;</i>
-        <%= _('Sign in') %>
-      </a>
-    </span>
-  <% end %>
 <% end %>
 
 <% if user_signed_in? %>
@@ -99,3 +90,4 @@
     <%= link_to "English", locale_path("en"), method: :patch %>
   <% end %>
 </span>
+
