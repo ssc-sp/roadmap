@@ -1,11 +1,10 @@
 // This file contains overrides to the core Bootstrap 3.x styling
-.table { border: 1px solid $color-border-default; }
-.table thead > tr > th { border-bottom: none; }
-.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td { border: 1px solid $color-border-default; }
+.table { border: none; }
+.table thead > tr > th { }
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {  }
 
 thead th {
-  background-color: $color-border-default;
-  color: $color-primary-text;
+  border-bottom: 2px solid #ddd;
 }
 
 thead th.table-scope {
@@ -23,7 +22,7 @@ thead th.table-scope {
 }
 
 th.date-column {
-  min-width: 120px;
+  min-width: 140px;
 }
 
 th.download-column {

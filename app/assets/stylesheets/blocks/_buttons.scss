@@ -2,6 +2,7 @@
 
 .btn {
   border-radius: 0px;
+  font-size: 16px;
 }
 
 /* primary button */
@@ -12,7 +13,7 @@
 .btn-primary:visited,
 .btn-primary:active:hover,
 .btn-primary.active:hover {
-  background-color: $color-primary-background;
+  background-color: $color-grey-darkest;
   border-color: $color-border-default;
   outline: none;
   margin-top: 5px;
@@ -21,14 +22,21 @@
 
 /* default button */
 .btn-default,
-.btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
-.btn-default:visited,
-.btn-default:active:hover,
-.btn-default.active:hover {
+.btn-default:visited {
   background-color: $color-primary-background;
   border-color: $color-border-default;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-default:hover, 
+.btn-default:active:hover,
+.btn-default.active:hover{
+  background-color: $color-grey-light;
+  border-color: $color-grey-light;
   outline: none;
   margin-top: 5px;
   margin-bottom: 10px;

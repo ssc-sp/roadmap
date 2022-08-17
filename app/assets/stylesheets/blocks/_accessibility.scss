@@ -39,9 +39,9 @@ a, input, select, .form-control {
   &:focus,
   &:hover,
   &:active {
-    outline-style: solid !important;
+    // outline-style: solid !important;
     outline-color: $color-focus-outline !important;
-    outline-width: 2px !important;
+    // outline-width: 2px !important;
   }
 }
   
@@ -51,9 +51,9 @@ a, input, select, .form-control {
     &:focus,
     &:hover,
     &:active {
-      outline-style: solid !important;
+      // outline-style: solid !important;
       outline-color: $color-focus-outline !important;
-      outline-width: 3px !important;
+      // outline-width: 3px !important;
     }
   }
   
@@ -61,8 +61,8 @@ a, input, select, .form-control {
     &:focus-within,
     &:focus,
     &:hover {
-      outline-style: solid !important;
+      // outline-style: solid !important;
       outline-color: $color-focus-outline !important;
-      outline-width: 2px !important;
+      // outline-width: 2px !important;
     }
   }
