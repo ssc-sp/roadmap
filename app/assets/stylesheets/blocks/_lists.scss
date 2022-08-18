@@ -15,3 +15,15 @@ span.sublist {
   margin-left: $grid-gutter-width / -2;
   margin-right: 25px;
 }
+
+.breadcrumb li:first-child::before{
+  content: ''!important;
+  padding: 0;
+  font-size: .7em;
+}
+
+.breadcrumb li:before {
+  color: #333!important;
+  content: ">"!important;
+  font-size: .7em;
+}

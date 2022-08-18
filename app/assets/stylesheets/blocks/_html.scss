@@ -60,6 +60,20 @@ legend {
 
 a {
   color: $color-link-text;
+  text-decoration: underline;
+}
+
+.navbar a, .sign-in a, footer a{
+  text-decoration: none !important;
+}
+
+a:visited {
+  color: #7834bc;
+}
+
+.navbar a:visited{
+  color: $color-link-text !important;
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

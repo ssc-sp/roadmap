@@ -1,0 +1,20 @@
+.gcweb-menu button{
+    font-size: 20px;
+    background-color: #26374a!important;
+    border: 1px solid #26374a !important;
+    color: #fff;
+    margin-left: 0;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+}
+
+.gcweb-menu button:hover{
+    background-color: #363636 !important;
+}
+
+.gcweb-menu [aria-haspopup=false][aria-expanded=true] {
+    // background-color: #444;
+    color: #fff;
+    list-style: none;
+    padding: 0;
+}

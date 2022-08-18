@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-08-16 18:05+0000\n"
-"PO-Revision-Date: 2022-08-16 18:05+0000\n"
+"POT-Creation-Date: 2022-08-18 18:26+0000\n"
+"PO-Revision-Date: 2022-08-18 18:26+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -501,7 +501,7 @@ msgstr ""
 #: ../../app/views/paginable/plans/_publicly_visible.html.erb:7
 #: ../../app/views/paginable/templates/_index.html.erb:6
 #: ../../app/views/paginable/templates/_organisational.html.erb:12
-#: ../../app/views/paginable/users/_index.html.erb:23
+#: ../../app/views/paginable/users/_index.html.erb:22
 #: ../../app/views/shared/org_selectors/_combined.html.erb:11
 #: ../../app/views/shared/org_selectors/_external_only.html.erb:9
 #: ../../app/views/shared/org_selectors/_local_only.html.erb:7
@@ -2616,8 +2616,20 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+#: ../../app/views/layouts/_header.html.erb:11
+msgid "Government of Canada"
+msgstr ""
+
 #: ../../app/views/layouts/_header.html.erb:21
 msgid "Search Canada.ca"
+msgstr ""
+
+#: ../../app/views/layouts/_header.html.erb:36
+msgid "Menu"
+msgstr ""
+
+#: ../../app/views/layouts/_header.html.erb:45
+msgid "Shared Services Canada"
 msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:12
@@ -2700,7 +2712,7 @@ msgstr ""
 
 #: ../../app/views/layouts/_signin_signout.html.erb:32
 #: ../../app/views/org_admin/users/edit.html.erb:71
-#: ../../app/views/paginable/users/_index.html.erb:26
+#: ../../app/views/paginable/users/_index.html.erb:25
 #: ../../app/views/super_admin/users/edit.html.erb:105
 msgid "Plans"
 msgstr ""
@@ -2898,7 +2910,7 @@ msgstr ""
 #: ../../app/views/paginable/research_outputs/_index.html.erb:51
 #: ../../app/views/paginable/templates/_history.html.erb:56
 #: ../../app/views/paginable/templates/_organisational.html.erb:56
-#: ../../app/views/paginable/users/_index.html.erb:81
+#: ../../app/views/paginable/users/_index.html.erb:78
 msgid "Edit"
 msgstr ""
 
@@ -3596,7 +3608,6 @@ msgid "Create school/department"
 msgstr ""
 
 #: ../../app/views/orgs/_external_identifiers.html.erb:5
-#: ../../app/views/paginable/users/_index.html.erb:29
 msgid "Identifiers"
 msgstr ""
 
@@ -3832,7 +3843,6 @@ msgid "You are about to delete '%{contributor_name}'. Are you sure?"
 msgstr ""
 
 #: ../../app/views/paginable/departments/_index.html.erb:5
-#: ../../app/views/paginable/users/_index.html.erb:22
 msgid "School or Department"
 msgstr ""
 
@@ -3854,7 +3864,7 @@ msgstr ""
 #: ../../app/views/paginable/plans/_privately_visible.html.erb:35
 #: ../../app/views/paginable/plans/_privately_visible.html.erb:45
 #: ../../app/views/paginable/templates/_history.html.erb:42
-#: ../../app/views/paginable/users/_index.html.erb:92
+#: ../../app/views/paginable/users/_index.html.erb:89
 #: ../../app/views/shared/_create_plan_modal.html.erb:12
 msgid "No"
 msgstr ""
@@ -3863,7 +3873,7 @@ msgstr ""
 #: ../../app/views/paginable/plans/_privately_visible.html.erb:35
 #: ../../app/views/paginable/plans/_privately_visible.html.erb:43
 #: ../../app/views/paginable/templates/_history.html.erb:42
-#: ../../app/views/paginable/users/_index.html.erb:92
+#: ../../app/views/paginable/users/_index.html.erb:89
 #: ../../app/views/shared/_create_plan_modal.html.erb:11
 msgid "Yes"
 msgstr ""
@@ -3908,7 +3918,7 @@ msgid "Expiration"
 msgstr ""
 
 #: ../../app/views/paginable/notifications/_index.html.erb:8
-#: ../../app/views/paginable/users/_index.html.erb:28
+#: ../../app/views/paginable/users/_index.html.erb:27
 #: ../../app/views/super_admin/notifications/_form.html.erb:34
 msgid "Active"
 msgstr ""
@@ -4179,19 +4189,19 @@ msgid ""
 "'Jun 2013'."
 msgstr ""
 
-#: ../../app/views/paginable/users/_index.html.erb:24
+#: ../../app/views/paginable/users/_index.html.erb:23
 msgid "Created date"
 msgstr ""
 
-#: ../../app/views/paginable/users/_index.html.erb:25
+#: ../../app/views/paginable/users/_index.html.erb:24
 msgid "Last activity"
 msgstr ""
 
-#: ../../app/views/paginable/users/_index.html.erb:27
+#: ../../app/views/paginable/users/_index.html.erb:26
 msgid "Current Privileges"
 msgstr ""
 
-#: ../../app/views/paginable/users/_index.html.erb:46
+#: ../../app/views/paginable/users/_index.html.erb:44
 msgid "Edit Profile"
 msgstr ""
 
