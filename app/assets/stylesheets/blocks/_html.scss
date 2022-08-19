@@ -20,7 +20,6 @@ main {
 }
 
 body{
-  padding-bottom: 50px;
   font-size: 16px;
 }
 
@@ -63,8 +62,12 @@ a {
   text-decoration: underline;
 }
 
-.navbar a, .sign-in a, footer a{
+.navbar a, .sign-in a, footer a, .btn{
   text-decoration: none !important;
+}
+
+.btn{
+  color: $color-white !important;
 }
 
 a:visited {

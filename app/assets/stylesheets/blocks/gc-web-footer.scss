@@ -1,0 +1,113 @@
+/*
+ Site information
+*/
+
+#wb-info {
+	background: #6f6f6f;
+	position: relative;
+	z-index: 5;
+
+	a {
+		font-size: .875em;
+		text-decoration: none;
+
+		&.wb-navcurr {
+			font-weight: 800;
+		}
+	}
+
+    .wb-navcurr li {
+        display: block;
+        width: 33%;
+        float: left;
+    }
+
+	.brand {
+		background: #f8f8f8;
+		line-height: 30px;
+
+		object,
+		img {
+			height: 40px;
+			margin-bottom: 2em;
+			margin-top: 20px;
+			width: auto;
+		}
+	}
+
+	.ftr-urlt-lnk {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			&:before {
+                font-size: 0.3em;
+				margin-right: 2em;
+			}
+            margin-right: 2em;
+            float: left;
+            
+		}
+	}
+
+	.landscape {
+		background: #26374a url(https://www.ospr.link/landscape.80f363ef24c5920c9c8e.png) no-repeat right bottom;
+
+		a {
+			color: #fff;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.tofpg {
+		line-height: 90px;
+
+		a {
+			color: #000;
+
+			span {
+				margin-left: 25px;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	nav {
+		padding-bottom: 2em;
+		padding-top: 2em;
+		position: relative;
+
+		li {
+			margin-bottom: .75em;
+		}
+	}
+}
+
+[dir=rtl] {
+	footer {
+		.brand {
+			.text-right {
+				text-align: left;
+			}
+		}
+
+		.tofpg {
+			float: right;
+
+			a {
+				span {
+					margin-left: 0;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
