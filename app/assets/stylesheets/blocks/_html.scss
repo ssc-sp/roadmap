@@ -62,21 +62,21 @@ a {
   text-decoration: underline;
 }
 
-.navbar a, .sign-in a, footer a, .btn{
+.dropdown a, .navbar a, .sign-in a, footer a, .btn{
   text-decoration: none !important;
-}
-
-.btn{
-  color: $color-white !important;
 }
 
 a:visited {
   color: #7834bc;
 }
 
-.navbar a:visited{
+.navbar-nav a:visited{
   color: $color-link-text !important;
   text-decoration: none !important;
+}
+
+.btn, .dropdown-menu a:visited{
+  color: $color-white !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
