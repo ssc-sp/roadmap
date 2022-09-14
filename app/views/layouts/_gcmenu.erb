@@ -1,20 +1,8 @@
 <nav class="gcweb-menu wb-init gcweb-menu-inited" typeof="SiteNavigationElement" id="wb-auto-2">
-    <script>
-        function openmenu() {
-            var x = document.getElementById("p2").getAttribute("aria-expanded"); 
-            if (x == "true") 
-            {
-                x = "false"
-            } else {
-                x = "true"
-            }
-            document.getElementById("p2").setAttribute("aria-expanded", x);
-        }
-    </script>
-    <button type="button" id="p2" onclick="openmenu()" aria-controls="gc-mnu-jobs-sub" aria-haspopup="true" aria-expanded="false" aria-label="Press the SPACEBAR to expand or the escape key to collapse this menu. Use the Up and Down arrow keys to choose a submenu item. Press the Enter or Right arrow key to expand it, or the Left arrow or Escape key to collapse it. Use the Up and Down arrow keys to choose an item on that level and the Enter key to access it."><%= _("Menu") %>
+    <button type="button" id="p2" onclick="openmenu()" aria-controls="gc-mnu-jobs-sub" aria-haspopup="true" aria-expanded="false" style="font-size: 20px; margin-left: -0.5em;" aria-label="Press the SPACEBAR to expand or the escape key to collapse this menu. Use the Up and Down arrow keys to choose a submenu item. Press the Enter or Right arrow key to expand it, or the Left arrow or Escape key to collapse it. Use the Up and Down arrow keys to choose an item on that level and the Enter key to access it."><%= _("Menu") %>
         <i class="fas fa-chevron-down" aria-hidden="true">&nbsp;</i>
     </button>
-    <ul role="menu" aria-orientation="vertical" data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+    <ul  style="margin-left: -0.5em;" role="menu" aria-orientation="vertical" data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-en.html">
         <li role="presentation">
             <a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a>
             <ul id="gc-mnu-jobs" role="menu" aria-orientation="vertical">
@@ -29,12 +17,12 @@
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits/ei.html">Employment Insurance benefits and leave</a></li>
                 <li role="separator" aria-orientation="horizontal"></li>
                 <li role="presentation"> <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-jobs-sub" aria-expanded="true">Most requested</a>
-                <ul id="gc-mnu-jobs-sub" role="menu" aria-orientation="vertical">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/access-roe.html">View your Records of Employment</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/sin.html">Apply for a Social Insurance Number (SIN)</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/foreign-workers.html">Hire a temporary foreign worker</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html">Immigrate as a skilled worker</a></li>
-                </ul>
+                    <ul id="gc-mnu-jobs-sub" role="menu" aria-orientation="vertical">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/access-roe.html">View your Records of Employment</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/sin.html">Apply for a Social Insurance Number (SIN)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/employment-social-development/services/foreign-workers.html">Hire a temporary foreign worker</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html">Immigrate as a skilled worker</a></li>
+                    </ul>
                 </li>
             </ul>
         </li>
@@ -127,6 +115,9 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.cbsa-asfc.gc.ca/comm-eng.html">Import and export from Canada</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs03922.html">Name a business</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/hm.html?locale=en_CA">Make changes to your corporation (Online Filing Centre)</a></li>
+                    <script>
+                        function openmenu() { var x = document.getElementById("p2").getAttribute("aria-expanded");  if (x == "true")  { x = "false" } else { x = "true" } document.getElementById("p2").setAttribute("aria-expanded", x); }
+                    </script>
                 </ul>
                 </li>
             </ul>
