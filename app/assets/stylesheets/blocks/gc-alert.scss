@@ -1,0 +1,88 @@
+// Removes styling from the current WET4 Alert
+%alert-first-child-before-disable {
+	& {
+		> {
+			:first-child {
+				&::before {
+					color: inherit;
+					content: none;
+				}
+			}
+		}
+	}
+}
+
+@mixin alert-type($color, $content) {
+	border-color: $color;
+
+	&::before {
+		color: $color;
+		content: $content;
+	}
+}
+
+.alert {
+	background-color: inherit;
+    border-width: 0 0 0 4px;
+	margin-bottom: 23px;
+	padding: 15px;
+
+	> {
+		p, ul, ol {
+			margin-bottom: 0px;
+		}
+
+		* {
+			margin-left: 15px;
+		}
+	}
+
+	details {
+		margin-left: .5em;
+		padding-top: 15px;
+	}
+
+	> {
+		:first-child:not(details) {
+			margin-top: auto;
+		}
+	}
+
+	&::before {
+		display: flex;
+		font-family: "Glyphicons Halflings";
+		font-size: 26px;
+		line-height: 2.3em;
+		margin-left: -1.27em;
+		padding: 2px;
+		position: absolute;
+	}
+
+	> :first-child {
+		margin-left: 15px;
+	}
+}
+
+.alert-info {
+	@include alert-type(#269abc, "\e086");
+	@extend %alert-first-child-before-disable;
+    background-color: #d7faff;
+}
+
+.alert-success {
+	@include alert-type(#278400, "\e084");
+	@extend %alert-first-child-before-disable;
+    background-color: #d8eeca;
+}
+
+.alert-warning {
+	@include alert-type(#ee7100, "\e107");
+	@extend %alert-first-child-before-disable;
+    background-color: #f9f4d4;
+}
+
+.alert-danger {
+	@include alert-type(#d3080c, "\e101");
+	@extend %alert-first-child-before-disable;
+    background-color: #fdedec;
+}
