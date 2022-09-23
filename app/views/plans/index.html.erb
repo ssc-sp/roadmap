@@ -1,9 +1,10 @@
-<div style="background-color:yellow; padding: 10px; border-radius:15px;">
+<div class="alert alert-danger">
+  <h3><%= sanitize _("Warning") %></h3>
   <%= sanitize _("<p>Proof of concept warnings, currently the tool is:</p>") %>
   <ul>
     <%= sanitize _("<li>only for <strong>unprotected data</strong></li> <li>testing and development</li>") %>
   </ul>
-  <%= sanitize _("Link to comparison form:") %> <a href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a>
+  <p><%= sanitize _("Link to comparison form:") %> <a class="alert-link" href="https://forms.gle/whKoMacZeTPVA13G9">https://forms.gle/whKoMacZeTPVA13G9</a></p>
 </div>
 <% title _('My Dashboard') %>
 <div class="row">
