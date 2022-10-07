@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-09-23 15:51+0000\n"
-"PO-Revision-Date: 2022-09-23 17:52+0200\n"
+"POT-Creation-Date: 2022-10-04 14:59+0000\n"
+"PO-Revision-Date: 2022-10-04 16:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -2695,16 +2695,17 @@ msgid "Published?"
 msgstr "Publié ?"
 
 #: ../../app/views/home/_welcome.html.erb:4
+#: ../../app/views/plans/index.html.erb:2
 msgid "Warning"
 msgstr "Avertissement"
 
 #: ../../app/views/home/_welcome.html.erb:5
-#: ../../app/views/plans/index.html.erb:2
+#: ../../app/views/plans/index.html.erb:3
 msgid "<p>Proof of concept warnings, currently the tool is:</p>"
 msgstr "<p>Avertissements de preuve de concept, actuellement l'outil est :</p>"
 
 #: ../../app/views/home/_welcome.html.erb:7
-#: ../../app/views/plans/index.html.erb:4
+#: ../../app/views/plans/index.html.erb:5
 msgid ""
 "<li>only for <strong>unprotected data</strong></li> <li>testing and developmen"
 "t</li>"
@@ -2713,7 +2714,7 @@ msgstr ""
 "t développement</li>"
 
 #: ../../app/views/home/_welcome.html.erb:9
-#: ../../app/views/plans/index.html.erb:6
+#: ../../app/views/plans/index.html.erb:7
 msgid "Link to comparison form:"
 msgstr "Lien vers le formulaire de comparaison :"
 
@@ -2818,13 +2819,13 @@ msgid "logo"
 msgstr "logo"
 
 #: ../../app/views/layouts/_navigation.html.erb:23
-#: ../../app/views/plans/index.html.erb:8
-#: ../../app/views/plans/index.html.erb:11
+#: ../../app/views/plans/index.html.erb:9
+#: ../../app/views/plans/index.html.erb:12
 msgid "My Dashboard"
 msgstr "Tableau de bord"
 
 #: ../../app/views/layouts/_navigation.html.erb:26
-#: ../../app/views/plans/index.html.erb:36
+#: ../../app/views/plans/index.html.erb:37
 msgid "Create plans"
 msgstr "Créer un plan"
 
@@ -4910,7 +4911,7 @@ msgstr "Numéro de subvention"
 msgid "Landing Page"
 msgstr "Page d'atterrissage"
 
-#: ../../app/views/plans/index.html.erb:15
+#: ../../app/views/plans/index.html.erb:16
 msgid ""
 "The table below lists the plans that you have created, and that have been shar"
 "ed with you by others. You can edit, share, download, make a copy, or remove t"
@@ -4920,23 +4921,23 @@ msgstr ""
 "eux que vous partagez avec d'autres. Vous pouvez à tout moment les modifier, l"
 "es partager, les télécharger, en faire une copie ou les supprimer."
 
-#: ../../app/views/plans/index.html.erb:17
+#: ../../app/views/plans/index.html.erb:18
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: ../../app/views/plans/index.html.erb:18
+#: ../../app/views/plans/index.html.erb:19
 msgid "You are now ready to create your first DMP."
 msgstr "Vous êtes prêt à créer votre premier plan."
 
-#: ../../app/views/plans/index.html.erb:19
+#: ../../app/views/plans/index.html.erb:20
 msgid "Click the 'Create plan' button below to begin."
 msgstr "Cliquez le bouton ci-dessous \"Créer un plan\" pour commencer."
 
-#: ../../app/views/plans/index.html.erb:42
+#: ../../app/views/plans/index.html.erb:43
 msgid "%{org_title} Plans"
 msgstr "%{org_title} Plans"
 
-#: ../../app/views/plans/index.html.erb:43
+#: ../../app/views/plans/index.html.erb:44
 msgid ""
 "The table below lists the plans that users at your organisation have created a"
 "nd shared within your organisation. This allows you to download a PDF and view"
