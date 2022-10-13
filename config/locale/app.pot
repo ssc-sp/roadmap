@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-09-23 15:51+0000\n"
-"PO-Revision-Date: 2022-09-23 15:51+0000\n"
+"POT-Creation-Date: 2022-10-04 14:59+0000\n"
+"PO-Revision-Date: 2022-10-04 14:59+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -2525,23 +2525,24 @@ msgid "Published?"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:4
+#: ../../app/views/plans/index.html.erb:2
 msgid "Warning"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:5
-#: ../../app/views/plans/index.html.erb:2
+#: ../../app/views/plans/index.html.erb:3
 msgid "<p>Proof of concept warnings, currently the tool is:</p>"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:7
-#: ../../app/views/plans/index.html.erb:4
+#: ../../app/views/plans/index.html.erb:5
 msgid ""
 "<li>only for <strong>unprotected data</strong></li> <li>testing and developmen"
 "t</li>"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:9
-#: ../../app/views/plans/index.html.erb:6
+#: ../../app/views/plans/index.html.erb:7
 msgid "Link to comparison form:"
 msgstr ""
 
@@ -2642,13 +2643,13 @@ msgid "logo"
 msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:23
-#: ../../app/views/plans/index.html.erb:8
-#: ../../app/views/plans/index.html.erb:11
+#: ../../app/views/plans/index.html.erb:9
+#: ../../app/views/plans/index.html.erb:12
 msgid "My Dashboard"
 msgstr ""
 
 #: ../../app/views/layouts/_navigation.html.erb:26
-#: ../../app/views/plans/index.html.erb:36
+#: ../../app/views/plans/index.html.erb:37
 msgid "Create plans"
 msgstr ""
 
@@ -4575,30 +4576,30 @@ msgstr ""
 msgid "Landing Page"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:15
+#: ../../app/views/plans/index.html.erb:16
 msgid ""
 "The table below lists the plans that you have created, and that have been shar"
 "ed with you by others. You can edit, share, download, make a copy, or remove t"
 "hese plans at any time."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:17
+#: ../../app/views/plans/index.html.erb:18
 msgid "Welcome"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:18
+#: ../../app/views/plans/index.html.erb:19
 msgid "You are now ready to create your first DMP."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:19
+#: ../../app/views/plans/index.html.erb:20
 msgid "Click the 'Create plan' button below to begin."
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:42
+#: ../../app/views/plans/index.html.erb:43
 msgid "%{org_title} Plans"
 msgstr ""
 
-#: ../../app/views/plans/index.html.erb:43
+#: ../../app/views/plans/index.html.erb:44
 msgid ""
 "The table below lists the plans that users at your organisation have created a"
 "nd shared within your organisation. This allows you to download a PDF and view"
