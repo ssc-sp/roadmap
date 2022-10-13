@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-08-18 18:26+0000\n"
-"PO-Revision-Date: 2022-08-18 20:26+0200\n"
+"POT-Creation-Date: 2022-09-23 15:51+0000\n"
+"PO-Revision-Date: 2022-09-23 17:52+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -2136,7 +2136,7 @@ msgid "Create account"
 msgstr "S'inscrire"
 
 #: ../../app/views/devise/mailer/confirmation_instructions.html.erb:2
-#: ../../app/views/home/_welcome.html.erb:10
+#: ../../app/views/home/_welcome.html.erb:11
 msgid "Welcome to %{application_name}"
 msgstr "Bienvenue sur %{application_name}"
 
@@ -2695,11 +2695,15 @@ msgid "Published?"
 msgstr "Publié ?"
 
 #: ../../app/views/home/_welcome.html.erb:4
+msgid "Warning"
+msgstr "Avertissement"
+
+#: ../../app/views/home/_welcome.html.erb:5
 #: ../../app/views/plans/index.html.erb:2
 msgid "<p>Proof of concept warnings, currently the tool is:</p>"
 msgstr "<p>Avertissements de preuve de concept, actuellement l'outil est :</p>"
 
-#: ../../app/views/home/_welcome.html.erb:6
+#: ../../app/views/home/_welcome.html.erb:7
 #: ../../app/views/plans/index.html.erb:4
 msgid ""
 "<li>only for <strong>unprotected data</strong></li> <li>testing and developmen"
@@ -2708,12 +2712,12 @@ msgstr ""
 "<li>uniquement pour <strong>les données non protégées</strong></li><li> test e"
 "t développement</li>"
 
-#: ../../app/views/home/_welcome.html.erb:8
+#: ../../app/views/home/_welcome.html.erb:9
 #: ../../app/views/plans/index.html.erb:6
 msgid "Link to comparison form:"
 msgstr "Lien vers le formulaire de comparaison :"
 
-#: ../../app/views/home/_welcome.html.erb:14
+#: ../../app/views/home/_welcome.html.erb:15
 msgid ""
 "<p>%{application_name} has been deployed by the <strong>Data Solutions for Sci"
 "ence</strong> team at <strong>Shared Services Canada</strong> for evaluation. "
@@ -2724,7 +2728,7 @@ msgstr ""
 "aluation. L'outil est destiné à vous aider à rédiger des plans de gestion des "
 "données.</p>"
 
-#: ../../app/views/home/_welcome.html.erb:20
+#: ../../app/views/home/_welcome.html.erb:21
 msgid "Getting started:"
 msgstr "Pour commencer :"
 
@@ -2792,6 +2796,10 @@ msgstr "Avis"
 msgid "Privacy"
 msgstr "Confidentialité"
 
+#: ../../app/views/layouts/_gcmenu.erb:2
+msgid "Menu"
+msgstr "Menu"
+
 #: ../../app/views/layouts/_header.html.erb:11
 msgid "Government of Canada"
 msgstr "Gouvernement du Canada"
@@ -2800,11 +2808,7 @@ msgstr "Gouvernement du Canada"
 msgid "Search Canada.ca"
 msgstr "Rechercher dans Canada.ca"
 
-#: ../../app/views/layouts/_header.html.erb:36
-msgid "Menu"
-msgstr "Menu"
-
-#: ../../app/views/layouts/_header.html.erb:45
+#: ../../app/views/layouts/_header.html.erb:41
 msgid "Shared Services Canada"
 msgstr "Services partagés Canada"
 

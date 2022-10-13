@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-08-18 18:26+0000\n"
-"PO-Revision-Date: 2022-08-18 18:26+0000\n"
+"POT-Creation-Date: 2022-09-23 15:51+0000\n"
+"PO-Revision-Date: 2022-09-23 15:51+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -2033,7 +2033,7 @@ msgid "Create account"
 msgstr ""
 
 #: ../../app/views/devise/mailer/confirmation_instructions.html.erb:2
-#: ../../app/views/home/_welcome.html.erb:10
+#: ../../app/views/home/_welcome.html.erb:11
 msgid "Welcome to %{application_name}"
 msgstr ""
 
@@ -2525,30 +2525,34 @@ msgid "Published?"
 msgstr ""
 
 #: ../../app/views/home/_welcome.html.erb:4
+msgid "Warning"
+msgstr ""
+
+#: ../../app/views/home/_welcome.html.erb:5
 #: ../../app/views/plans/index.html.erb:2
 msgid "<p>Proof of concept warnings, currently the tool is:</p>"
 msgstr ""
 
-#: ../../app/views/home/_welcome.html.erb:6
+#: ../../app/views/home/_welcome.html.erb:7
 #: ../../app/views/plans/index.html.erb:4
 msgid ""
 "<li>only for <strong>unprotected data</strong></li> <li>testing and developmen"
 "t</li>"
 msgstr ""
 
-#: ../../app/views/home/_welcome.html.erb:8
+#: ../../app/views/home/_welcome.html.erb:9
 #: ../../app/views/plans/index.html.erb:6
 msgid "Link to comparison form:"
 msgstr ""
 
-#: ../../app/views/home/_welcome.html.erb:14
+#: ../../app/views/home/_welcome.html.erb:15
 msgid ""
 "<p>%{application_name} has been deployed by the <strong>Data Solutions for Sci"
 "ence</strong> team at <strong>Shared Services Canada</strong> for evaluation. "
 "The tool is intended to help you write data management plans.</p>"
 msgstr ""
 
-#: ../../app/views/home/_welcome.html.erb:20
+#: ../../app/views/home/_welcome.html.erb:21
 msgid "Getting started:"
 msgstr ""
 
@@ -2616,6 +2620,10 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+#: ../../app/views/layouts/_gcmenu.erb:2
+msgid "Menu"
+msgstr ""
+
 #: ../../app/views/layouts/_header.html.erb:11
 msgid "Government of Canada"
 msgstr ""
@@ -2624,11 +2632,7 @@ msgstr ""
 msgid "Search Canada.ca"
 msgstr ""
 
-#: ../../app/views/layouts/_header.html.erb:36
-msgid "Menu"
-msgstr ""
-
-#: ../../app/views/layouts/_header.html.erb:45
+#: ../../app/views/layouts/_header.html.erb:41
 msgid "Shared Services Canada"
 msgstr ""
 
