@@ -299,6 +299,8 @@ fr-FR:
       signed_in: Connecté
       signed_out: Déconnecté
       already_signed_out: Déconnecté
+      user:
+        signed_out: Déconnecté
     unlocks:
       send_instructions: Vous recevrez dans quelques minutes un courriel contenant
         les directives pour déverrouiller votre compte.

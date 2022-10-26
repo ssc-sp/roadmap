@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: roadmap 1.0\n"
 "Report-Msgid-Bugs-To: contact@translation.io\n"
-"POT-Creation-Date: 2022-10-04 14:59+0000\n"
-"PO-Revision-Date: 2022-10-04 16:59+0200\n"
+"POT-Creation-Date: 2022-10-25 15:44+0000\n"
+"PO-Revision-Date: 2022-10-25 17:44+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -1246,7 +1246,7 @@ msgstr "<p>Les %{object_types} suivant(e)s seront déplacé(e)s vers '%{org_name
 #: ../../spec/features/locales_spec.rb:53
 #: ../../spec/features/locales_spec.rb:69
 msgid "Create plan"
-msgstr "Create plan"
+msgstr "Créer un plan"
 
 #: ../../app/helpers/usage_helper.rb:65
 msgid "Last month"
@@ -2827,7 +2827,7 @@ msgstr "Tableau de bord"
 #: ../../app/views/layouts/_navigation.html.erb:26
 #: ../../app/views/plans/index.html.erb:37
 msgid "Create plans"
-msgstr "Créer un plan"
+msgstr "Créer des plans"
 
 #: ../../app/views/layouts/_navigation.html.erb:31
 msgid "Reference"
