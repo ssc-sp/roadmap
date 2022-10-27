@@ -20,8 +20,8 @@ class HomeController < ApplicationController
       # to 'FirstName' and 'Surname' when a plan is shared with an unknown user
       if name == 'First Name Surname'
         redirect_to edit_user_registration_path
-      else
-        redirect_to plans_url
+      #else
+      #  redirect_to plans_url
       end
     elsif session['devise.shibboleth_data'].present?
       # NOTE: Update this to handle ORCiD as well when we enable it as a login method

@@ -39,8 +39,11 @@
 			<ol class="breadcrumb" style="list-style: none; background-color: transparent; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">
 				<li><a href='https://www.canada.ca/en.html'>Canada.ca</a></li>
 				<li><a style="padding: 5px 10px;" href='https://www.canada.ca/en/shared-services.html'><%= _('Shared Services Canada') %></a></li>
-				<% if !active_page?(root_path, true) %>
+				<% if user_signed_in? && !active_page?(root_path, true) %>
 					<li><a style="padding: 5px 10px;" href='/'>DMPRoadmap</a></li>
+					<% if active_page?('/plans/new', true) %>
+						<li><a style="padding: 5px 10px;" href='/plans'>My Dashboard</a></li>
+					<% end %>
 				<% end %>
 			</ol>
 		</div>
